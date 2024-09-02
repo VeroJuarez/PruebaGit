@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Datos Personales</h1>
+        <form id="formulario">
+            <!-- Ingreso datos de del formulario-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÀ-ÿ\s]+" title="El nombre solo puede contener letras y espacios.">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required pattern="[A-Za-zÀ-ÿ\s]+" title="El apellido solo puede contener letras y espacios.">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Fecha de Nacimiento:</label>
+            <input type="date" id="date" name="date" required max="2006-12-31" title="Debes ser mayor de 18 años.">
+
+            <label for="pais">Pais:</label>
+            <input type="text" id="pais" name="pais" required pattern="[A-Za-zÀ-ÿ\s]+" title="El país solo puede contener letras y espacios.">
+
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+
+        <div class="style-buttons">
+            <button id="estilo1" class="style-btn">Estilo 1</button>
+            <button id="estilo2" class="style-btn">Estilo Alto Contraste</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
