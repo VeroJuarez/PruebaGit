@@ -9,11 +9,9 @@ document.getElementById("formulario").onsubmit = function(event) {
 };
 
 document.getElementById("estilo1").onclick = function() {
-    document.body.classList.remove("estilo-alto-contraste");
-    document.body.classList.add("estilo-claro");
+    document.documentElement.setAttribute('data-bs-theme', 'light');
 };
 
 document.getElementById("estilo2").onclick = function() {
-    document.body.classList.remove("estilo-claro");
-    document.body.classList.add("estilo-alto-contraste");
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
 };
